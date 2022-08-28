@@ -1,1 +1,9 @@
-<p>todo-item works!</p>
+<div class="flex hover:shadow p-4 justify-between items-center bg-gray-50 my-2">
+    <div class="flex items-center">
+        <!-- <div>#{{data.id}}</div>  -->
+        <div class="ml-2">{{data.title}}</div>
+    </div>
+    <div>
+        <div class="btn red" (click)="deleteItem()">Delete</div>
+    </div>
+</div>
