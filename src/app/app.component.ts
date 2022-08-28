@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'closir-test';
+  constructor(
+    public router: Router,
+  ){}
+
+  navigateToContact(){
+    this.router.navigate(['contact']);
+  }
+  navigateToChart(){
+    this.router.navigate(['chart']);
+  }
+  navigateToAbout(){
+    this.router.navigate(['about']);
+  }
+  navigateToTodo(){
+    this.router.navigate(['']);
+  }
+
 }
