@@ -13,3 +13,7 @@
 .red{
     @apply  hover:bg-red-500 bg-red-400 
 }
+.input{
+    @apply flex-1 outline-none
+    bg-slate-100 
+}
