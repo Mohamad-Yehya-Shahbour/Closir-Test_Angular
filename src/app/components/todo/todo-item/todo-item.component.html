@@ -1,7 +1,10 @@
 <div class="flex hover:shadow p-4 justify-between items-center bg-gray-50 my-2">
     <div class="flex items-center">
-        <!-- <div>#{{data.id}}</div>  -->
-        <div class="ml-2">{{data.title}}</div>
+        <div>#{{data.id}}</div> 
+        <div class="ml-2" *ngIf="!editTodo; else inputBlock;">{{data.title}}</div>
+        <ng-template #inputBlock>
+            <input class="input ml-2 p-2" type="text" #updateInput (keyup)="getUpdateInputValue(updateInput.value)">
+        </ng-template>
     </div>
     <div>
         <div class="btn red" (click)="deleteItem()">Delete</div>
