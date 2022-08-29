@@ -20,4 +20,17 @@ export class TodoItemComponent implements OnInit {
     todos.splice(index, 1)
   }
 
+  updateItem(){
+    if (this.updateInputValue === ""){
+      this.showAlert = true;
+      return
+    }
+    var index =  todos.findIndex(x => x.id==this.data.id);
+    todos[index]={id: this.data.id, title:this.updateInputValue}
+  }
+
+  updateToggle(){
+    this.editTodo = !this.editTodo;
+  }
+
 }
