@@ -6,7 +6,11 @@
             <input class="input ml-2 p-2" type="text" #updateInput (keyup)="getUpdateInputValue(updateInput.value)">
         </ng-template>
     </div>
-    <div>
+    <div class="flex">
+        <div *ngIf="!editTodo;else elseBlock" class="btn blue mr-2" (click)="updateToggle()" >Edit</div>
+        <ng-template #elseBlock>
+            <button class="btn btn blue mr-2" (click)="updateToggle(); updateItem()">Update</button>
+        </ng-template>
         <div class="btn red" (click)="deleteItem()">Delete</div>
     </div>
 </div>
