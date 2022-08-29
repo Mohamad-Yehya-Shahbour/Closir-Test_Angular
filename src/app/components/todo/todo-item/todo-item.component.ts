@@ -7,12 +7,20 @@ import { todos } from 'src/app/providers/todos.states';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent implements OnInit {
-
+  @Input() data:any;
+  editTodo : boolean = false;
+  showAlert : boolean = false;
+  updateInputValue :string = "";
 
   constructor() { }
-  @Input() data:any;
+  
   ngOnInit(): void {
 
+  }
+
+  getUpdateInputValue(value:string){
+    this.updateInputValue = value;
+    console.warn(this.updateInputValue)
   }
 
   deleteItem(){
