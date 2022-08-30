@@ -38,9 +38,10 @@
   </div>
 
 
-  <div class="grid grid-cols-4 ">
+  <div class="flex flex-row">
+    
     <div
-      class="sidebar top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900 min-h-screen"
+      class="basis-1/5 sidebar top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900 min-h-screen"
     >
       
       <div
@@ -49,7 +50,7 @@
          (click)="navigateToTodo()"
       >
         <i class="bi bi-house-door-fill"></i>
-        <span class="text-[15px] ml-4 text-gray-200 font-bold">TODO</span>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold">Todo</span>
       </div>
       <div
         class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer 
@@ -78,9 +79,8 @@
       </div>
     </div>
 
-    <div class="col-span-3 box-border	p-8 min-h-screen ">
+    <div class="basis-4/5 min-h-screen ">
       <router-outlet></router-outlet>
-      
     </div>
 
   </div>
