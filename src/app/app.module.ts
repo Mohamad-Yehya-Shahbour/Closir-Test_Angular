@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,9 +11,9 @@ import { TodoInputComponent } from './components/todo/todo-input/todo-input.comp
 import { TodoListComponent } from './components/todo/todo-list/todo-list.component';
 import { TodoItemComponent } from './components/todo/todo-item/todo-item.component';
 import { XyChartComponent } from './components/chart/xy-chart/xy-chart.component';
-import { RadarChartComponent } from './components/chart/radar-chart/radar-chart.component';
 import { PieChartComponent } from './components/chart/pie-chart/pie-chart.component';
 import { ButtonComponent } from './components/shared/button/button.component';
+import { GaugeChartComponent } from './components/chart/gauge-chart/gauge-chart.component';
 
 
 @NgModule({
@@ -27,15 +27,16 @@ import { ButtonComponent } from './components/shared/button/button.component';
     TodoListComponent,
     TodoItemComponent,
     XyChartComponent,
-    RadarChartComponent,
     PieChartComponent,
     ButtonComponent,
+    GaugeChartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ NO_ERRORS_SCHEMA , CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
