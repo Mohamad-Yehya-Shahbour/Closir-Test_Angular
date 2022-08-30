@@ -10,6 +10,11 @@ import { AboutComponent } from './components/about/about.component';
 import { TodoInputComponent } from './components/todo/todo-input/todo-input.component';
 import { TodoListComponent } from './components/todo/todo-list/todo-list.component';
 import { TodoItemComponent } from './components/todo/todo-item/todo-item.component';
+import { XyChartComponent } from './components/chart/xy-chart/xy-chart.component';
+import { RadarChartComponent } from './components/chart/radar-chart/radar-chart.component';
+import { PieChartComponent } from './components/chart/pie-chart/pie-chart.component';
+import { ButtonComponent } from './components/shared/button/button.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +25,11 @@ import { TodoItemComponent } from './components/todo/todo-item/todo-item.compone
     AboutComponent,
     TodoInputComponent,
     TodoListComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    XyChartComponent,
+    RadarChartComponent,
+    PieChartComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
