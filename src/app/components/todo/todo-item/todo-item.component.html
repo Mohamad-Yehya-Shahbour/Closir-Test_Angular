@@ -7,11 +7,11 @@
         </ng-template>
     </div>
     <div class="flex">
-        <button *ngIf="!editTodo;else elseBlock" class="btn blue mr-2" (click)="updateToggle()" >Edit</button>
+        <app-button *ngIf="!editTodo;else elseBlock"  ngClass="btn blue mr-2" [message]="'Edit'" (onClick)="updateToggle()" ></app-button>
         <ng-template #elseBlock>
-            <button class="btn btn blue mr-2" (click)="updateToggle(); updateItem()">Update</button>
+          <app-button ngClass="btn blue mr-2" [message]="'Update'" (onClick)="updateToggle(); updateItem()" ></app-button>
         </ng-template>
-        <button class="btn red" (click)="deleteItem()">Delete</button>
+        <app-button ngClass="btn red" [data]="data" [message]="'Delete'" (onClick)="deleteItem()" ></app-button>
     </div>
 </div>
 <div *ngIf="showAlert" class="absolute bottom-0 right-0 text-white  px-6 py-4 border-0 rounded mb-4 bg-yellow-500">
