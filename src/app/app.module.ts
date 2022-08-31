@@ -14,6 +14,7 @@ import { XyChartComponent } from './components/chart/xy-chart/xy-chart.component
 import { PieChartComponent } from './components/chart/pie-chart/pie-chart.component';
 import { ButtonComponent } from './components/shared/button/button.component';
 import { GaugeChartComponent } from './components/chart/gauge-chart/gauge-chart.component';
+import { AlertComponent } from './components/shared/alert/alert.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { GaugeChartComponent } from './components/chart/gauge-chart/gauge-chart.
     PieChartComponent,
     ButtonComponent,
     GaugeChartComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,

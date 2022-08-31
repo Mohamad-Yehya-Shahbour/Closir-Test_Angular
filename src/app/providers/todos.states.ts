@@ -6,14 +6,14 @@ export interface TodoModel {
 export let todos:TodoModel[] = [
     {
         id : 1,
-        title : 'medidate 1 hour'
+        title : 'Meditate 1 hour'
     },
     {
         id : 2,
-        title : 'sport 30 minutes'
+        title : 'Sport 30 minutes'
     },
     {
         id : 3,
-        title : 'read a book'
+        title : 'Read a book'
     }
 ]
