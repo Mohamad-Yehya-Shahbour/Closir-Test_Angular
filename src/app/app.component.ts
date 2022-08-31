@@ -9,21 +9,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'closir-test';
-  constructor(
-    public router: Router,
-  ){}
+  constructor(){}
 
-  navigateToContact(){
-    this.router.navigate(['contact']);
-  }
-  navigateToChart(){
-    this.router.navigate(['chart']);
-  }
-  navigateToAbout(){
-    this.router.navigate(['about']);
-  }
-  navigateToTodo(){
-    this.router.navigate(['']);
-  }
+ 
 
 }
