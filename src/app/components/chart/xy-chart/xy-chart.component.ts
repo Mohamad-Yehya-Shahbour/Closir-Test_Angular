@@ -21,9 +21,9 @@ export class XyChartComponent implements OnInit {
       title.text = "Product Sales by Area";
 
       let data = [
-        {"area": "Florida", "computers": 10, "cars":54, "boats": 10},
+        {"area": "Florida", "computers": 10, "cars":54, "boats": 50},
         {"area": "LA", "computers": 50, "cars":100, "boats": 25},
-        {"area": "NY", "computers": 20, "cars":70, "boats": 12},
+        {"area": "NY", "computers": 25, "cars":150, "boats": 30},
         {"area": "CA", "computers": 70, "cars":40, "boats": 10},
       ];
       chart.data = data;
