@@ -1,0 +1,38 @@
+<div
+      class="sidebar top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900 min-h-[120vh]"
+    >
+      
+      <div
+        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer
+         hover:bg-slate-400 text-white"
+         (click)="navigateToTodo()"
+      >
+        <i class="bi bi-house-door-fill"></i>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold">Todo</span>
+      </div>
+      <div
+        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer 
+        hover:bg-slate-400 text-white"
+        (click)="navigateToChart()"
+      >
+        <i class="bi bi-bookmark-fill"></i>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold">Charts</span>
+      </div>
+      <div
+        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer 
+        hover:bg-slate-400 text-white"
+        (click)="navigateToAbout()"
+      >
+        <i class="bi bi-bookmark-fill"></i>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold">About</span>
+      </div>
+      <div class="my-4 bg-gray-600 h-[1px]"></div>
+      <div
+        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer
+        hover:bg-slate-400 text-white"
+        (click)="navigateToContact()"
+      >
+        <i class="bi bi-box-arrow-in-right"></i>
+        <span class="text-[15px] ml-4 text-gray-200 font-bold">Contact</span>
+      </div>
+    </div>
