@@ -13,18 +13,7 @@ export class SideBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToContact(){
-    this.router.navigate(['contact']);
-  }
-  navigateToChart(){
-    this.router.navigate(['chart']);
-  }
-  navigateToAbout(){
-    this.router.navigate(['about']);
-  }
-  navigateToTodo(){
-    this.router.navigate(['']);
-  }
+  
 
 
 }
