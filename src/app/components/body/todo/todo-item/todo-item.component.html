@@ -1,0 +1,26 @@
+<div class="flex hover:shadow p-4 justify-between items-center bg-gray-50 my-2">
+    <div class="flex items-center">
+
+        <div class="text-slate-400"><b>#{{data.id}}</b></div> 
+
+        <div class="ml-2" *ngIf="!editTodo; else inputBlock;">{{data.title}}</div>
+
+        <ng-template #inputBlock>
+            <input class="input ml-2 p-2" type="text" #updateInput (keyup)="getUpdateInputValue(updateInput.value)">
+        </ng-template>
+
+    </div>
+    
+    <div class="flex">
+
+      <app-button *ngIf="!editTodo;else elseBlock"  ngClass="btn blue mr-2" [message]="'Edit'" (onClick)="updateToggle()" ></app-button>
+      <ng-template #elseBlock>
+        <app-button ngClass="btn blue mr-2" [message]="'Update'" (onClick)="updateToggle(); updateItem()" ></app-button>
+      </ng-template>
+
+      <app-button ngClass="btn red" [data]="data" [message]="'Delete'" (onClick)="deleteItem()" ></app-button>
+
+    </div>
+</div>
+<app-alert [showAlert]="showAlert"></app-alert>
+
