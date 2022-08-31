@@ -17,6 +17,7 @@ import { GaugeChartComponent } from './components/body/chart/gauge-chart/gauge-c
 import { AlertComponent } from './components/shared/alert/alert.component';
 import { TopBarComponent } from './components/navigations/top-bar/top-bar.component';
 import { SideBarComponent } from './components/navigations/side-bar/side-bar.component';
+import { SideBarButtonComponent } from './components/shared/side-bar-button/side-bar-button.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { SideBarComponent } from './components/navigations/side-bar/side-bar.com
     GaugeChartComponent,
     AlertComponent,
     TopBarComponent,
-    SideBarComponent
+    SideBarComponent,
+    SideBarButtonComponent
   ],
   imports: [
     BrowserModule,
